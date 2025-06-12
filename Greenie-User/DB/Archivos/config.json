@@ -1,0 +1,19 @@
+{
+    "intervalo_temp": 60,
+    "intervalo_humS": 90,
+    "intervalo_humA": 90,
+    "intervalo_Luz": 60,
+    "hora_riego": [
+        [
+            22,
+            15
+        ],
+        [
+            9,
+            15
+        ]
+    ],
+    "limite_temp": 21,
+    "limite_humedad": 10,
+    "intervalo_dias_abono": 7
+}
