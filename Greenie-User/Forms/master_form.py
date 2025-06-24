@@ -13,14 +13,17 @@ from Forms.info_form import InfoForm
 from Forms.construction_Form import ConstructionForm
 from Forms.graphic_Form import GraphicForm
 from Forms.active_Form import Active_Form
+from Forms.ticket_Form import TicketForm
+
 
 class Master_Form(tk.Tk):
-
-    def __init__(self,arduino_worker,parser_worker):
+    def __init__(self,arduino_worker,parser_worker, usuario_actual):
         super().__init__()
         self.arduino = arduino_worker
         self.parser = parser_worker
         self.etiquetas = None
+        self.usuario_actual = usuario_actual
+
 
         #//Bloque de imagenes e iconos
         self.logo = util_imagenes.leer_imagen("./assets/icon1.png", (250, 90))
@@ -37,6 +40,7 @@ class Master_Form(tk.Tk):
         self.iconCam = util_imagenes.leer_icon("./assets/camB.png")
         self.iconCNoti = util_imagenes.leer_icon("./assets/Cnoti.png")
         self.iconSNoti = util_imagenes.leer_icon("./assets/Snoti.png")
+        self.iconTickets = util_imagenes.leer_icon("./assets/icon.png")
 
         #---------------------------------------
 
@@ -118,7 +122,9 @@ class Master_Form(tk.Tk):
             ("Graficas", self.iconGrafica, self.buttonGraficas,self.abrir_panel_graficas),
             ("Activadores", self.iconActuadores, self.buttonActivadores, self.abrir_panel_activadores),
             ("Cam", self.iconCam, self.buttonCam,self.en_construccion),
-            ("Configuracion", self.iconConfi, self.buttonConfiguracion,self.en_construccion)
+            ("Configuracion", self.iconConfi, self.buttonConfiguracion,self.en_construccion),
+            ("Tickets", self.iconTickets, tk.Button(self.menu_lateral), self.abrir_panel_tickets),
+
         ]
 
         for text, icon, button, comando in buttons_info:
@@ -190,6 +196,16 @@ class Master_Form(tk.Tk):
     def abrir_panel_config(self):
         self.limpiar_panel(self.cuerpo_principal)
 
+    def abrir_panel_tickets(self):
+        self.limpiar_panel(self.cuerpo_principal)
+        TicketForm(
+            self.cuerpo_principal,
+            id_usuario=self.usuario_actual["id"],
+            nombre=self.usuario_actual["nombre"],
+            telefono=self.usuario_actual["telefono"],
+            direccion=self.usuario_actual["direccion"]
+        )
+
     def en_construccion(self):
         self.limpiar_panel(self.cuerpo_principal)
         ConstructionForm(self.cuerpo_principal,self.construccion)
@@ -257,6 +273,7 @@ class Master_Form(tk.Tk):
         self.arduino.detener()
         self.parser.detener()
         self.destroy()
+
 
 
 

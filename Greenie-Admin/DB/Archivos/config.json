@@ -1,0 +1,18 @@
+{
+    "intervalo_temp": null,
+    "intervalo_humS": null,
+    "intervalo_humA": null,
+    "intervalo_Luz": null,
+    "hora_riego": [
+        [
+            21,
+            47
+        ],
+        [
+            18,
+            0
+        ]
+    ],
+    "limite_temp": null,
+    "limite_humedad": null
+}
