@@ -1,5 +1,14 @@
 {
-    "ABC123": "123",
-    "XYZ789": "123",
-    "123": "123"
+    "ABC123": {
+        "password": "123",
+        "nombre": "Luis Pérez",
+        "telefono": "8999-0000",
+        "direccion": "San José"
+    },
+    "123": {
+        "password": "123",
+        "nombre": "Josue Venegas",
+        "telefono": "8888-9999",
+        "direccion": "Alajuela"
+    }
 }

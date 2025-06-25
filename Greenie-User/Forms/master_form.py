@@ -13,14 +13,19 @@ from Forms.info_form import InfoForm
 from Forms.construction_Form import ConstructionForm
 from Forms.graphic_Form import GraphicForm
 from Forms.active_Form import Active_Form
+from Forms.ticket_Form import TicketForm
+from Forms.config_Form import Config_Form
+from Forms.camera_Form import Camera_Form
+
 
 class Master_Form(tk.Tk):
-
-    def __init__(self,arduino_worker,parser_worker):
+    def __init__(self,arduino_worker,parser_worker, usuario_actual):
         super().__init__()
         self.arduino = arduino_worker
         self.parser = parser_worker
         self.etiquetas = None
+        self.usuario_actual = usuario_actual
+
 
         #//Bloque de imagenes e iconos
         self.logo = util_imagenes.leer_imagen("./assets/icon1.png", (250, 90))
@@ -37,6 +42,7 @@ class Master_Form(tk.Tk):
         self.iconCam = util_imagenes.leer_icon("./assets/camB.png")
         self.iconCNoti = util_imagenes.leer_icon("./assets/Cnoti.png")
         self.iconSNoti = util_imagenes.leer_icon("./assets/Snoti.png")
+        self.iconTickets = util_imagenes.leer_icon("./assets/ticketB.png")
 
         #---------------------------------------
 
@@ -102,7 +108,7 @@ class Master_Form(tk.Tk):
         alto_menu = 30
         font_awesome = font.Font(family='FontAwesome', size=12)
 
-        self.labelCodigo = tk.Label(self.menu_lateral, text=default_Values.codigo)
+        self.labelCodigo = tk.Label(self.menu_lateral, text=default_Values().codigo)
         self.labelCodigo.config(fg="#fff", font=("roboto", 15),bg=COLOR_SECUNDARIO,
                                 pady=1,justify=tk.LEFT)
         self.labelCodigo.pack(side=tk.BOTTOM,fill=tk.X)
@@ -112,13 +118,15 @@ class Master_Form(tk.Tk):
         self.buttonConfiguracion = tk.Button(self.menu_lateral)
         self.buttonGraficas = tk.Button(self.menu_lateral)
         self.buttonCam = tk.Button(self.menu_lateral)
+        self.buttonTikets = tk.Button(self.menu_lateral)
 
         buttons_info = [
             ("Dashboard", self.iconDash, self.buttonDashBoard,self.abril_panel_dashboard),
-            ("Graficas", self.iconGrafica, self.buttonGraficas,self.abrir_panel_graficas),
+            ("Graficas", self.iconGrafica, self.buttonGraficas,self.en_construccion),
             ("Activadores", self.iconActuadores, self.buttonActivadores, self.abrir_panel_activadores),
-            ("Cam", self.iconCam, self.buttonCam,self.en_construccion),
-            ("Configuracion", self.iconConfi, self.buttonConfiguracion,self.en_construccion)
+            ("Cam", self.iconCam, self.buttonCam,self.abrir_panel_camera),
+            ("Configuracion", self.iconConfi, self.buttonConfiguracion,self.abrir_panel_config),
+            ("Tickets", self.iconTickets, self.buttonTikets, self.abrir_panel_tickets)
         ]
 
         for text, icon, button, comando in buttons_info:
@@ -158,11 +166,17 @@ class Master_Form(tk.Tk):
                                 pady=1, width=15,)
         self.labelNotiAbono.pack(side=tk.TOP, fill=tk.X)
 
-        if default_Values.notificacion_abono:
-            self.labelNotiAbono.pack(side=tk.TOP, fill=tk.X)
-            self.buttonMenuNotificaciones.config(image=self.iconCNoti)
-        else:
-            self.labelNotiAbono.pack_forget()
+        self.labelNotiAgua = tk.Label(self.notificaciones, text="Por favor llenar el tanque de agua")
+        self.labelNotiAgua.config(fg="#fff", font=("roboto", 12), bg=COLOR_SECUNDARIO,relief=tk.RIDGE,
+                                pady=1, width=15,)
+        self.labelNotiAgua.pack(side=tk.TOP, fill=tk.X)
+
+        self.labelNotiDrenaje = tk.Label(self.notificaciones, text="Vaciar el drenaje de agua")
+        self.labelNotiDrenaje.config(fg="#fff", font=("roboto", 12), bg=COLOR_SECUNDARIO,relief=tk.RIDGE,
+                                pady=1, width=15,)
+        self.labelNotiDrenaje.pack(side=tk.TOP, fill=tk.X)
+
+
 
     def toggle_panel_Notificaciones(self):
         if self.notificaciones.winfo_exists():
@@ -187,8 +201,23 @@ class Master_Form(tk.Tk):
         self.limpiar_panel(self.cuerpo_principal)
         Active_Form(self.cuerpo_principal,self.arduino)
 
+    def abrir_panel_camera(self):
+        self.limpiar_panel(self.cuerpo_principal)
+        Camera_Form(self.cuerpo_principal)
+
     def abrir_panel_config(self):
         self.limpiar_panel(self.cuerpo_principal)
+        Config_Form(self.cuerpo_principal)
+
+    def abrir_panel_tickets(self):
+        self.limpiar_panel(self.cuerpo_principal)
+        TicketForm(
+            self.cuerpo_principal,
+            id_usuario=self.usuario_actual["id"],
+            nombre=self.usuario_actual["nombre"],
+            telefono=self.usuario_actual["telefono"],
+            direccion=self.usuario_actual["direccion"]
+        )
 
     def en_construccion(self):
         self.limpiar_panel(self.cuerpo_principal)
@@ -248,8 +277,31 @@ class Master_Form(tk.Tk):
         self.after(1000, self.actualizar_datos)
 
 
+    def actualizar_notificaciones(self):
+        if self.notificaciones.winfo_exists():
+            if default_Values().notificacion_abono:
+                self.labelNotiAbono.pack(side=tk.TOP, fill=tk.X)
+                self.buttonMenuNotificaciones.config(image=self.iconCNoti)
+            else:
+                self.labelNotiAbono.pack_forget()
+
+            if default_Values().notificacion_agua:
+                self.labelNotiAgua.pack(side=tk.TOP, fill=tk.X)
+                self.buttonMenuNotificaciones.config(image=self.iconCNoti)
+            else:
+                self.labelNotiAgua.pack_forget()
+            if default_Values().notificacion_drenaje:
+                self.labelNotiDrenaje.pack(side=tk.TOP, fill=tk.X)
+                self.buttonMenuNotificaciones.config(image=self.iconCNoti)
+            else:
+                self.labelNotiDrenaje.pack_forget()
+
+        self.after(1000, self.actualizar_notificaciones)
+
+
     def ejecutar(self):
         self.actualizar_datos()
+        self.actualizar_notificaciones()
         self.mainloop()
 
     def cerrar(self):
@@ -257,6 +309,7 @@ class Master_Form(tk.Tk):
         self.arduino.detener()
         self.parser.detener()
         self.destroy()
+
 
 
 

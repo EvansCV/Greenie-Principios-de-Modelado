@@ -1,18 +1,19 @@
 {
-    "intervalo_temp": null,
-    "intervalo_humS": null,
-    "intervalo_humA": null,
-    "intervalo_Luz": null,
+    "intervalo_temp": 60,
+    "intervalo_humS": 90,
+    "intervalo_humA": 90,
+    "intervalo_Luz": 60,
+    "intervalo_Cam": 10,
     "hora_riego": [
         [
-            21,
-            47
+            22,
+            15
         ],
         [
-            18,
+            0,
             0
         ]
     ],
-    "limite_temp": null,
-    "limite_humedad": null
+    "limite_temp": 26,
+    "limite_humedad": 10
 }

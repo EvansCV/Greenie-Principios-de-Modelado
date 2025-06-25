@@ -62,40 +62,47 @@ class Login_Form():
         inicio.pack(padx=5,pady=5)
         inicio.bind("<Return>",(lambda event: self.validar()))
 
-
     def validar(self):
         codigo_dispositivo = self.usuario.get()
         password = self.password.get()
-        acceso = self.verificar_credenciales(codigo_dispositivo,password)
-        if (acceso):
+        usuario_info = self.verificar_credenciales(codigo_dispositivo, password)
+
+        if usuario_info:
             self.ventana.destroy()
+
+            # Cargar valores por defecto
             self.default_Values = default_Values()
             self.default_Values.cargar_config()
+            self.default_Values.codigo = codigo_dispositivo  # para referencia global
+
+            # Inicializar Arduino y Parser
             arduino_thread = ArduinoThread(puerto='COM3')
             arduino_thread.start()
             parser_thread = Parser(arduino_thread)
             parser_thread.start()
-            self.default_Values.codigo = codigo_dispositivo
-            app = Master_Form(arduino_thread,parser_thread)
+
+            # ✅ Solo este llamado es necesario y correcto
+            app = Master_Form(arduino_thread, parser_thread, usuario_actual=usuario_info)
             app.ejecutar()
         else:
-            messagebox.showerror("Mensaje","Usuario o password incorrecto")
+            messagebox.showerror("Mensaje", "Usuario o password incorrecto")
 
-    def verificar_credenciales(self, codigo_dispositivo: str, password: str) -> bool:
+    def verificar_credenciales(self, codigo_dispositivo: str, password: str):
         try:
-            with open(self.ruta, "r") as f:
+            with open(self.ruta, "r", encoding="utf-8") as f:
                 data = json.load(f)
             if codigo_dispositivo in data:
-                pIngresada = data[codigo_dispositivo]
-                if password == pIngresada:
-                    return True
-                else:
-                    return False
-            else:
-                return False
+                usuario_data = data[codigo_dispositivo]
+                if isinstance(usuario_data, dict) and usuario_data.get("password") == password:
+                    return {
+                        "id": codigo_dispositivo,
+                        "nombre": usuario_data.get("nombre", ""),
+                        "telefono": usuario_data.get("telefono", ""),
+                        "direccion": usuario_data.get("direccion", "")
+                    }
         except Exception as e:
             print(f"[Error] al verificar credenciales: {e}")
-            return False
+        return None
 
     def ejecutar(self):
         self.ventana.mainloop()
