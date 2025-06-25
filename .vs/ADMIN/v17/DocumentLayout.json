@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\golli\\Documents\\ADMIN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_imagenes.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Util\\util_imagenes.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\icon1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\assets\\icon1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\login_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Forms\\login_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\config.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config2.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\config2.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\master_form.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Forms\\master_form.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\graphic_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Forms\\graphic_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\config_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Forms\\config_Form.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_ventana.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\Util\\util_ventana.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\actuadores.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Greenie-User\\assets\\actuadores.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 249,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "config.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config.py",
+              "RelativeDocumentMoniker": "Greenie-User\\config.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config.py",
+              "RelativeToolTip": "Greenie-User\\config.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T05:18:57.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "icon1.png",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\icon1.png",
+              "RelativeDocumentMoniker": "Greenie-User\\assets\\icon1.png",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\icon1.png",
+              "RelativeToolTip": "Greenie-User\\assets\\icon1.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-17T05:08:51.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "actuadores.png",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\actuadores.png",
+              "RelativeDocumentMoniker": "Greenie-User\\assets\\actuadores.png",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\assets\\actuadores.png",
+              "RelativeToolTip": "Greenie-User\\assets\\actuadores.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-17T05:08:42.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login_Form.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\login_Form.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Forms\\login_Form.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\login_Form.py",
+              "RelativeToolTip": "Greenie-User\\Forms\\login_Form.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:52:15.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "graphic_Form.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\graphic_Form.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Forms\\graphic_Form.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\graphic_Form.py",
+              "RelativeToolTip": "Greenie-User\\Forms\\graphic_Form.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:49:52.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\main.py",
+              "RelativeDocumentMoniker": "Greenie-User\\main.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\main.py",
+              "RelativeToolTip": "Greenie-User\\main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:47:33.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "config2.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config2.py",
+              "RelativeDocumentMoniker": "Greenie-User\\config2.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\config2.py",
+              "RelativeToolTip": "Greenie-User\\config2.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:43:05.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "util_ventana.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_ventana.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Util\\util_ventana.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_ventana.py",
+              "RelativeToolTip": "Greenie-User\\Util\\util_ventana.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:40:38.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "util_imagenes.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_imagenes.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Util\\util_imagenes.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Util\\util_imagenes.py",
+              "RelativeToolTip": "Greenie-User\\Util\\util_imagenes.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:40:37.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "config_Form.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\config_Form.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Forms\\config_Form.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\config_Form.py",
+              "RelativeToolTip": "Greenie-User\\Forms\\config_Form.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:39:55.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "master_form.py",
+              "DocumentMoniker": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\master_form.py",
+              "RelativeDocumentMoniker": "Greenie-User\\Forms\\master_form.py",
+              "ToolTip": "C:\\Users\\golli\\Documents\\ADMIN\\Greenie-User\\Forms\\master_form.py",
+              "RelativeToolTip": "Greenie-User\\Forms\\master_form.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-17T04:35:32.219Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
