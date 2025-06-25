@@ -1,0 +1,10 @@
+{
+    "ABC123": {
+        "password": "greeniepass",
+        "es_nuevo": false
+    },
+    "XYZ789": {
+        "password": "123456",
+        "es_nuevo": false
+    }
+}

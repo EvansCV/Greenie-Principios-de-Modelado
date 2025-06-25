@@ -1,0 +1,12 @@
+{
+    "ABC123": {
+        "intervalo_riego": 11,
+        "frecuencia_datos": 3,
+        "umbral_humedad": 40
+    },
+    "XYZ789": {
+        "intervalo_riego": 20,
+        "frecuencia_datos": 10,
+        "umbral_humedad": 35
+    }
+}
