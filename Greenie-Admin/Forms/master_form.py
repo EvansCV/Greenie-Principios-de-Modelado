@@ -9,6 +9,8 @@ import Util.util_ventana as util_ventana
 #---------------------------------------------------------/
 from Forms.construction_Form import ConstructionForm
 from Forms.ticket_Form import TicketForm
+from Forms.ticket_history_Form import TicketHistoryForm
+
 
 
 class Master_Form(tk.Tk):
@@ -95,11 +97,13 @@ class Master_Form(tk.Tk):
 
         self.buttonRegistro = tk.Button(self.menu_lateral)
         self.buttonTickets = tk.Button(self.menu_lateral)
-
+        self.buttonHistorial = tk.Button(self.menu_lateral)
 
         buttons_info = [
             ("Registro", self.iconDash, self.buttonRegistro, self.en_construccion),
             ("Tickets", self.iconTickets, self.buttonTickets, self.abrir_panel_tickets),
+            ("Historial", self.iconTickets, self.buttonHistorial, self.abrir_panel_historial),
+
         ]
 
         for text, icon, button, comando in buttons_info:
@@ -134,6 +138,10 @@ class Master_Form(tk.Tk):
     def abrir_panel_tickets(self):
         self.limpiar_panel(self.cuerpo_principal)
         TicketForm(self.cuerpo_principal)
+
+    def abrir_panel_historial(self):
+        self.limpiar_panel(self.cuerpo_principal)
+        TicketHistoryForm(self.cuerpo_principal)
 
     def en_construccion(self):
         self.limpiar_panel(self.cuerpo_principal)
